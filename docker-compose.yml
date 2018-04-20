@@ -1,8 +1,41 @@
 version: '3'
-
+#networks:
+#  hostnet:
+#    driver: bridge
 services:
   schoolapi:
     image: schoolapi
     build:
       context: .
       dockerfile: SchoolAPI/Dockerfile
+    ports:
+      - "5000:80"
+    depends_on:
+      - consul
+    environment:
+    - consulConfig:hostAddress=http://172.31.1.4:5000
+    - consulConfig:settingsKey=schoolapi1
+    #network_mode: "bridge"
+    #networks:
+    #  hostnet: {}
+  schoolapi2:
+    image: schoolapi
+    build:
+      context: .
+      dockerfile: SchoolAPI/Dockerfile
+    ports:
+      - "5001:80"
+    depends_on:
+      - consul
+    environment:
+    - consulConfig:hostAddress=http://172.31.1.4:5001
+    - consulConfig:settingsKey=schoolapi2
+    #network_mode: "bridge"
+    #networks:
+    #  hostnet: {}
+  consul:
+    image: consul
+    ports:
+      - "8500:8500"
+    #networks:
+    #  hostnet: {}
