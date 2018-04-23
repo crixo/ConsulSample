@@ -39,3 +39,14 @@ services:
       - "8500:8500"
     #networks:
     #  hostnet: {}
+
+ #schoolclient:
+ #  image: schoolclient
+ #  build:
+ #    context: .
+ #    dockerfile: SchoolClient/Dockerfile
+ #  ports:
+ #    -  "5002:80"
+      
+
+

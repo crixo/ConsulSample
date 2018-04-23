@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2015
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolAPI", "SchoolAPI\SchoolAPI.csproj", "{45905D81-4C97-4BEF-95B0-2CF10115F5D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolAPI", "SchoolAPI\SchoolAPI.csproj", "{45905D81-4C97-4BEF-95B0-2CF10115F5D7}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{FCF4161E-E3A4-4B90-9E85-2C00BCF2F8B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolClient", "SchoolClient\SchoolClient.csproj", "{FEED64D9-0DEE-47AF-915A-47D57382F717}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{FCF4161E-E3A4-4B90-9E85-2C00BCF2F8B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FCF4161E-E3A4-4B90-9E85-2C00BCF2F8B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FCF4161E-E3A4-4B90-9E85-2C00BCF2F8B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEED64D9-0DEE-47AF-915A-47D57382F717}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEED64D9-0DEE-47AF-915A-47D57382F717}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEED64D9-0DEE-47AF-915A-47D57382F717}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEED64D9-0DEE-47AF-915A-47D57382F717}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

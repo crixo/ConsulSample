@@ -7,3 +7,10 @@ services:
       #- ASPNETCORE_URLS=http://+:5000
     #ports:
     #  - "80"
+
+#  schoolclient:
+#    environment:
+#      - ASPNETCORE_ENVIRONMENT=Development
+#    ports:
+#      - "80"
+
